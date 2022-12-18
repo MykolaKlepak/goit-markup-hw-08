@@ -4,7 +4,7 @@
     padding-right: 15px;
     margin: 0 auto;
     box-sizing: border-box;
-    outline: 2px solid brown; 
+    // outline: 2px solid brown; 
         
     @media screen and (min-width: 480px) {
         max-width: 480px;    
@@ -15,6 +15,4 @@
     @media screen and (min-width: 1200px) {
         max-width: 1200px;
     }
-
-
 }

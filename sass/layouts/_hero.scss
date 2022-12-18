@@ -3,24 +3,42 @@
     height: 400px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/hero.jpg);
+    
+    background-image: var(--gradient),
+        url(../images/mob-hero-1x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 118px 0px;
+    
+
+    @include retina {
+        background-image: var(--gradient), url(../images/mob-hero-2x.jpg);
+    }
+
+    @media screen and (min-width: 480px) {
+        background-image: var(--gradient), url(../images/tablet-hero-1x.jpg);
+        
+        @include retina {
+            background-image: var(--gradient), url(../images/tablet-hero-2x.jpg);
+        }
+    }
 
     @media screen and (min-width: 768px) {
         max-width: 768px;
+        padding: 118px 0px;
+
+        background-image: var(--gradient), url(../images/desktop-hero-1x.jpg);
         
+        @include retina {
+            background-image: var(--gradient), url(../images/desktop-hero-2x.jpg);
+        }
     }
-    
+
     @media screen and (min-width: 1200px) {
         max-width: 1600px;
-        height: 600px;        
+        height: 600px;       
         padding: 200px 0px;
-    }
+    }  
 }
 
 .hero__title {

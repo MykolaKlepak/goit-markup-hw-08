@@ -86,11 +86,14 @@
           <div class="mob-menu-bottom">
             <ul class="mob-contacts">
               <li class="mob-contacts__item">
-                <a class="mob-contacts__link mob-contacts__link--tel" href="tel:+380961111111">+38 096 111 11 11 </a>
-                
+                <a class="mob-contacts__link mob-contacts__link--tel" href="tel:+380961111111"
+                  >+38 096 111 11 11
+                </a>
               </li>
               <li class="mob-contacts__item">
-                <a class="mob-contacts__link mob-contacts__link--mail" href="mailto:info@devstudio.com"
+                <a
+                  class="mob-contacts__link mob-contacts__link--mail"
+                  href="mailto:info@devstudio.com"
                   >info@devstudio.com
                 </a>
               </li>
@@ -212,19 +215,37 @@
           <h2 class="work-title">Чим ми займаємося</h2>
           <ul class="wort-list">
             <li class="work-item">
-              <img src="./images/box1.jpg" width="370" height="294" alt="box1" />
+              <img
+                class="work__image"
+                srcset="./images/desktop-box-1x.jpg 1x, ./images/desktop-box-2x.jpg 2x"
+                src="./images/desktop-box-1x.jpg"
+                alt="box1"
+                width="370"
+              />              
               <div class="label">
                 <h3 class="label-text">Десктопні додатки</h3>
               </div>
             </li>
             <li class="work-item">
-              <img src="./images/box2.jpg" width="370" height="294" alt="box2" />
+              <img
+                class="work__image"
+                srcset="./images/desktop-box2-2x.jpg 1x, ./images/desktop-box2-2x.jpg 2x"
+                src="./images/desktop-box2-1x.jpg"
+                alt="box2"
+                width="370"
+              />
               <div class="label">
                 <h3 class="label-text">Мобільні додатки</h3>
               </div>
             </li>
             <li class="work-item">
-              <img src="./images/box3.jpg" width="370" height="294" alt="box3" />
+              <img
+                class="work__image"
+                srcset="./images/desktop-box3-1x.jpg 1x, ./images/desktop-box3-2x.jpg 2x"
+                src="./images/desktop-box3-1x.jpg"
+                alt="box3"
+                width="370"
+              />
               <div class="label">
                 <h3 class="label-text">Дизайнерські рішення</h3>
               </div>
@@ -240,7 +261,21 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img src="./images/teamcard1.jpg" width="270" height="260" alt="Ігор Дем'яненко" />
+              <picture class="team-image">
+                <source
+                  srcset="./images/desktop-team1-1x.jpg 1x, ./images/desktop-team1-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/tablet-team1-1x.jpg 1x, ./images/tablet-team1-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mob-team1-1x.jpg 1x, ./images/mob-team1-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/mob-team1-1x.jpg" alt="Ігор Дем'яненко" width="450" />
+              </picture>
               <div class="info">
                 <h3 class="team-titleli">Ігор Дем'яненко</h3>
                 <p class="team-text">Product Designer</p>
@@ -289,7 +324,21 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/teamcard2.jpg" width="270" height="260" alt="Ольга Рєпіна" />
+              <picture class="team-image">
+                <source
+                  srcset="./images/desktop-team2-1x.jpg 1x, ./images/desktop-team2-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/tablet-team2-1x.jpg 1x, ./images/tablet-team2-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mob-team2-1x.jpg 1x, ./images/mob-team2-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/mob-team2-1x.jpg" alt="Ольга Рєпіна" width="450" />
+              </picture>              
               <div class="info">
                 <h3 class="team-titleli">Ольга Рєпіна</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -338,7 +387,21 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/taemcard3.jpg" width="270" height="260" alt="Микола Тарасов" />
+              <picture class="team-image">
+                <source
+                  srcset="./images/desktop-team3-1x.jpg 1x, ./images/desktop-team3-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/tablet-team3-1x.jpg 1x, ./images/tablet-team3-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mob-team3-1x.jpg 1x, ./images/mob-team3-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/mob-team3-1x.jpg" alt="Микола Тарасов" width="450" />
+              </picture>              
               <div class="info">
                 <h3 class="team-titleli">Микола Тарасов</h3>
                 <p class="team-text">Marketing</p>
@@ -387,7 +450,21 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/taemcard4.jpg" width="270" height="260" alt="Михайло Єрмаков" />
+              <picture class="team-image">
+                <source
+                  srcset="./images/desktop-team4-1x.jpg 1x, ./images/desktop-team4-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/tablet-team4-1x.jpg 1x, ./images/tablet-team4-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mob-team4-1x.jpg 1x, ./images/mob-team4-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/mob-team4-1x.jpg" alt="Михайло Єрмаков" width="450" />
+              </picture>                  
               <div class="info">
                 <h3 class="team-titleli">Михайло Єрмаков</h3>
                 <p class="team-text">UI Designer</p>
@@ -647,12 +724,12 @@
             class="comment-form"
             placeholder="Введіть текст"
           ></textarea>
-          
+
           <label class="checkbox-label">
             <input type="checkbox" name="policy" class="checkbox-form hide" id="policy" required />
             <span class="checkbox-icon">
               <svg width="16" height="15">
-                <use href="./images/icons.svg#icon-check"></use>                
+                <use href="./images/icons.svg#icon-check"></use>
               </svg>
             </span>
             Погоджуюся з розсилкою та приймаю<a class="checkbox-link" href="#">Умови договору</a>

@@ -18,6 +18,11 @@
     display: block; 
     background-color: transparent;
 
+    &:hover,
+    &:focus {
+        fill: var(--selection-color);
+    }
+
     @media screen and (min-width: 767px) {
         display: none;
     }
@@ -43,6 +48,10 @@
         justify-content: space-between;
         overflow: auto;
     }
+
+    @media screen and (min-width: 767px) {
+        display: none;
+    }
 }
 
 .menu-close-btn {
@@ -56,12 +65,15 @@
 
     &:hover,
     &:focus {
-        color: var(--selection-color);
+        fill: var(--selection-color);
     }
 }
 
 .menu-list {
-    margin-bottom: 306px;
+    @media screen and (max-width: 450px) {
+        margin-bottom: 306px;
+    }
+    
 }
 
 .menu-list__item:not(:last-child) {
