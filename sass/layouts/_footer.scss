@@ -7,13 +7,11 @@
     display: flex;    
 
     @media screen and (max-width: 767px) {
-        flex-direction: column;
-        // align-items: center;
+        flex-direction: column;        
         text-align: center;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        // flex-direction: row;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {        
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: baseline;
@@ -31,8 +29,7 @@
 
     @media screen and (max-width: 1200px) {
         margin-bottom: 60px;
-    }
-    
+    }    
 }
 
 .address-list {
@@ -193,6 +190,10 @@
     @media screen and (min-width: 1200px) {
         width: 358px;
     }
+}
+
+.footer-input.footer-input--portfolio {
+    box-sizing: border-box;
 }
 
 .footer-form .btn-footer {

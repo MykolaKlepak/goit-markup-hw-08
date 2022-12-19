@@ -1,6 +1,7 @@
 @import './utils/vars';
 @import './base/reset';
 @import './utils/hide';
+@import './utils/mixins';
 @import './base/common';
 
 
@@ -15,6 +16,6 @@
 @import './layouts/work';
 @import './layouts/team';
 @import './layouts/clients';
-@import './layouts/footer';
 @import './layouts/filter';
 @import './layouts/portfolio';
+@import './layouts/footer';

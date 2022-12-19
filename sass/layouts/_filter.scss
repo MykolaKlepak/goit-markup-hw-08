@@ -2,7 +2,20 @@
     display: flex;
     gap: 8px;
     justify-content: center;
-    margin-bottom: 50px;
+
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {         
+        margin-bottom: 50px;
+    }
 }
 
 .btn-portfolio {
@@ -15,8 +28,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.875;
-    /* align-items: center; */
+    line-height: 1.875;    
     text-align: center;
     letter-spacing: 0.03em;
     padding: 6px 22px;
